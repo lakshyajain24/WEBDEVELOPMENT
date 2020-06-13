@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+
+	//Function to display alert 
+	function msg() {
+		alert("Thank You For Registeration");
+
+</script>
+
+<style type="text/css">
+
+input[type=text], input[type=password], input[type=date]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+label,p{
+  font-weight: bolder;
+  font-size: 150%;
+}
+
+#button{
+  font-size: 150%;
+  color: yellow;
+  border-width: 0;
+  background-color: #f12222;
+}
+</style>
+
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1 align="center">Registeration</h1>
+    <p align="center">Please fill this form below.</p>
+    <hr>
+
+	<label for="fname">First name:</label><br>
+	<input type="text" id="fname" name="fname" required><br>
+	<label for="lname">Last name:</label><br>
+	<input type="text" id="lname" name="lname" required>
+
+    <label for="birthday">Birthday:</label>
+  	<input type="date" id="birthday" name="birthday" required><br>
+
+    <label for="email"><b>Email:</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+		
+    <label for="psw"><b>Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <center>
+		<input type="button" id="button" value="Click This When Done" onblur="msg()" required>
+	</center>
+</form>
+
+</body>
+</html>
